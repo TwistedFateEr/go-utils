@@ -7,4 +7,9 @@ case $1 in
   git pull
   git push
 ;;
+"run")
+  go build cmd/dhcp/main.go
+  sudo ./main
+  rm -rf main
+;;
 esac
