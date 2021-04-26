@@ -2,7 +2,7 @@
 *.exe
 *.exe~
 *.dll
-*.so
+*.sovlan
 *.dylib
 
 # Test binary, built with `go test -c`
@@ -12,5 +12,5 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
 /.idea

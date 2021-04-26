@@ -1,0 +1,16 @@
+server6:
+  plugins:
+    - server_id: LL 00:0c:29:00:a4:0b
+    - file: "/home/aa/go-utils/config/dhcp6_leases.txt"
+    - dns: 2001:4860:4860::8888 2001:4860:4860::8844
+    - nbp: "http://[ff02::1:2:3:4]/nbp"
+    - prefix: ff02::1:2:3:4/48 48
+
+server4:
+  plugins:
+    - lease_time: 60s
+#    - server_id: 127.0.0.1
+#    - dns: 8.8.8.8 8.8.4.4
+#    - router: 127.0.0.1
+#    - netmask: 255.255.255.0
+#    - range: /home/aa/go-utils/config/dhcp4_leases.txt 192.168.147.1 192.168.147.255 60s

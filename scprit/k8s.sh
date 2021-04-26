@@ -2,7 +2,7 @@
 
 
 cat << EOF >> /etc/hosts
-192.168.147.253 master
+192.168.147.143 master
 EOF
 
 cat <<EOF >  /etc/sysctl.d/k8s.conf

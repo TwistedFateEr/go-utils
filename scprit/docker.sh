@@ -7,7 +7,7 @@ function echoEmpty() {
     echo ""
 }
 
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo
 yum clean all
 yum makecache
 yum update
@@ -39,7 +39,7 @@ cat  /etc/fstab
 
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum list docker-ce --showduplicates | sort -r
-yum install -y docker-ce-18.09.6 docker-ce-cli-18.09.6 containerd.io
+yum install -y docker-ce-20.10.0 docker-ce-cli-20.10.0 containerd.io  --allowerasing
 systemctl start docker
 systemctl enable docker
 mkdir -p /etc/docker
